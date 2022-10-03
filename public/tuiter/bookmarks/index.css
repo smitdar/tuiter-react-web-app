@@ -121,3 +121,15 @@ body{
         padding-left: 85px;
 }
 
+.wd-flex-div{
+    display:flex
+}
+
+.wd-paddingtop{
+    float:left ;
+    padding-right:12px;
+}
+
+.wd-floattop{
+    float:left
+}
