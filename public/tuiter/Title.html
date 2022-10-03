@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0136)http://localhost:63342/tuiter-react-web-app/public/tuiter/bookmarks/index.html?_ijt=7rlssi2ar65esv0uhk3nra78ig&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Title</title>
+
+    <link href="./Title_files/index.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="wd-line">
+    <h1 class="wd-page-name">Bookmarks</h1>
+    <h3 class="wd-handle-name">@smit</h3>
+</div>
+
+<div class="wd-line">
+    <img class="wd-profile-image" src="./Title_files/bookmark1.jpeg"> 
+    <h1 class="wd-handlename"> Mark Zukerberg </h1><h2 class="wd-profilename">@markz - Jul 31</h2>
+
+</div>
+
+<div class="wd-line">
+    <img class="wd-profile-image" src="./Title_files/bookmark2.webp">
+    <h1 class="wd-handlename"> Jeff Bezos </h1><h2 class="wd-profilename">@jeffb - Jul 1</h2>
+
+</div>
+
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body></html>

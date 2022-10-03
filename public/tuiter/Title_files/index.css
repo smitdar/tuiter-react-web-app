@@ -1,0 +1,37 @@
+body{
+    font-family: "Arial";
+    background-color: black;
+    color: white;
+
+}
+
+.wd-line{
+    border-bottom: 1px solid  rgb(47, 51, 54);
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.wd-page-name{
+    font-size:20px;
+}
+
+.wd-handle-name{
+    font-size:13px;
+    color = rgb(47, 51, 54);
+}
+
+.wd-profile-image{
+    border-radius: 50%;
+    diameter: 48px;
+
+}
+.wd-handlename{
+    font-size:15px;
+    color = rgb(47, 51, 54);
+}
+
+.wd-profilename{
+    font-size:15px;
+    color = white;
+}
+
