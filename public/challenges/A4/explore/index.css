@@ -10,7 +10,7 @@
 }
 
 .wd-search {
-    width: 100%;
+    width: 95%;
     height: 50px;
     margin-left:16px;
 
@@ -22,6 +22,7 @@
     text-decoration: none;
     padding-top: 60px;
     margin-top: 25px;
+    stroke-width: 30px;
 }
 
 
@@ -158,6 +159,7 @@ background-color:white;
 .wd-BTS {
             width:100%;
             position:relative;
+            padding-right:5px;
         }
 
         .wd-image-text {
