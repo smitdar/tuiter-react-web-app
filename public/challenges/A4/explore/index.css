@@ -1,0 +1,157 @@
+.wd-rounded-corners-all-around {
+
+   border-radius: 50px;
+   background-color: #383838;
+   color: #D3D3D3;
+   width: 90%;
+   height: 50%;
+   margin-right: 12px;
+   border: 1px solid  #383838;
+}
+
+.wd-search {
+    width: 100%;
+    height: 50px;
+    margin-left:16px;
+
+}
+
+.wd-settings {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    padding-top: 50px;
+    margin-top: 25px;
+}
+
+
+.wd-nav-tabs{
+    width: 100%;
+    color: rgb(29,161,242);
+    padding: 0px
+}
+
+.wd-nav-tabs li{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.wd-nav-tabs .wd-nav-tab-selected{
+    color: white;
+    border-bottom: solid 4px rgb(29,161,242);
+    text-decoration:none;
+    padding-bottom: 16px;
+
+}
+
+.wd-nav-tabs .wd-nav-tab-not-selected{
+    color: #D3D3D3;
+    text-decoration:none;
+}
+
+.wd-title {
+    color: rgb(110, 118, 125);
+    font-size:13px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.wd-line{
+    border-bottom: 1px solid  #D3D3D3;
+        min-height: 120px;
+}
+
+
+.wd-images{
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin-right: 16px;
+    margin-top: 5px;
+    border-radius: 15px
+
+}
+
+a{
+text-decoration: none;
+}
+
+
+
+.wd-small-div{
+    height:10px;
+     border-bottom: 1px solid  rgb(47, 51, 54);
+     margin-left: 16px;
+}
+
+
+.wd-nav-tabs-line{
+ border-bottom: 1px solid  rgb(47, 51, 54);
+
+}
+
+.wd-centre-div{
+    float: centre;
+    width:  50%;
+    height: 100%;
+    font-family: "Arial";
+    background-color: white;
+    color: black;
+    border-left: 1px solid  #D3D3D3;
+    border-right: 1px solid  #D3D3D3;
+
+}
+.wd-starship{
+width: 100%;
+}
+
+.wd-left-div{
+    float: left;
+    width:  20%;
+    height: 100%;
+    font-family: "Arial";
+    background-color: white;
+    color: black;
+    border-left: 1px solid  #D3D3D3;
+    border-right: 1px solid  #D3D3D3;
+    margin-right: 15px;
+
+}
+
+.wd-section-border{
+
+    border-left: 1px solid  #D3D3D3;
+    border-right: 1px solid  #D3D3D3;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+table{
+    width:100%;
+}
+
+.wd-logo{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    float:left;
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:5px;
+
+}
+
+body{
+background-color:black;
+    color:white;
+}
+
+.button{
+background-color:white;
+    color:black;
+}
