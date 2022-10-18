@@ -4,7 +4,6 @@
    background-color: white;
    color: #D3D3D3;
    width: 95%;
-   height: 50%;
    border: 1px solid  #383838;
 
 
@@ -18,7 +17,6 @@
 }
 
 .wd-settings {
-    color: #1F51FF;
     font-size: 25px;
     text-decoration: none;
     stroke-width: 30px;
@@ -61,8 +59,8 @@
 }
 
 .wd-line{
-    border-bottom: 1px solid  #D3D3D3;
-        min-height: 120px;
+    border-bottom: 1px solid  #555;
+
 }
 
 
@@ -122,10 +120,11 @@ width: 100%;
 
 .wd-section-border{
 
-    border-left: 1px solid  #D3D3D3;
-    border-right: 1px solid  #D3D3D3;
+    border-left: 1px solid  #555;
+    border-right: 1px solid  #555;
     margin-left: 0px;
     margin-right: 0px;
+    border-bottom: 1px solid  #555;
 
 }
 
@@ -147,9 +146,8 @@ table{
 }
 
 body{
-        background-color:white;
-        color:black;
-        font-family: "Arial";
+
+
 }
 
 .button{
@@ -168,9 +166,9 @@ background-color:white;
         }
 
 .wd-right-section{
-    background-color: white;
-    border-left: 1px solid  #D3D3D3;
-        border-right: 1px solid  #D3D3D3;
+    border-left: 1px solid  #555;
+        border-right: 1px solid  #555;
+        border-bottom: 1px solid  #555;
 
 }
 
@@ -196,3 +194,9 @@ position: relative;
              bottom:4px;
              left: 4px;
          }
+
+.wd-follow-button{
+float:right;
+padding-top: 10px;
+padding-right:5px;
+}

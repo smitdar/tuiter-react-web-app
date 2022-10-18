@@ -61,19 +61,32 @@ import WhoToFollow from "../WhoToFollow/index.js";
                         </ul>
                     </div>
 
-    <div class="wd-line">
+    <div class="wd-section-border">
                             <div class="wd-top-image">
 
                                 <image src="../../Tuiterimages/Starship.webp" class="wd-top-image"></image>
                                 <h3 class="wd-image-text ">SpaceX's Starship</h3>
 
                             </div>
-    </div>
+
 
     ${ExploreComponent()}
     </div>
+    </div>
 
     <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 wd-ps-col3">
+<table class="wd-right-section">
+
+                <th>
+                    <h5 class="container">
+                        Who to follow
+                    </h5>
+                </th>
+
+                <th>
+
+                </th>
+                </table>
     ${WhoToFollow()}
     </div>
 
