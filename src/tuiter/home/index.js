@@ -1,18 +1,18 @@
 import React from "react";
-import whoArray from './who.json';
-import WhoToFollowListItem
-  from "./WhoToFollowListItem";
+import homeArray from './home.json';
+import HomeComponent
+  from "./HomeComponent";
 
 const WhoToFollowList = () => {
     return (
         <>
             <ul className="list-group ">
                 <a href="/#" className="list-group-item wd-list-group "><strong>Who to follow</strong></a>
-                {whoArray.map(who => {
+                {homeArray.map(home => {
                     return (
 
-                        <div key={who.id}>
-                            <WhoToFollowListItem who={who} />
+                        <div key={home.id}>
+                            <HomeComponent home={home} />
                         </div>
                     );
                 })
@@ -22,4 +22,3 @@ const WhoToFollowList = () => {
     );
 };
 export default WhoToFollowList;
-

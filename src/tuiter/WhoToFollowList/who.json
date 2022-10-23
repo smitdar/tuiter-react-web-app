@@ -1,21 +1,21 @@
 [
   {
     "_id": 123,
-    "userName": "NASA",
-    "handle": "NASA",
-    "avatarIcon": "./Images/googlelogo.png"
+    "userName": "Google",
+    "handle": "google",
+    "avatarIcon": "../Tuiterimages/googlelogo.png"
   },
   {
     "_id": 234,
-    "userName": "Tesla",
-    "handle": "tesla",
-    "avatarIcon": "./Images/oraclelogo.png"
+    "userName": "Walmart",
+    "handle": "walmart",
+    "avatarIcon": "../Tuiterimages/walmartlogo.png"
   },
   {
     "_id": 345,
-    "userName": "SpaceX",
-    "handle": "SpaceX",
-    "avatarIcon": "./Images/applelogo.png"
+    "userName": "Apple",
+    "handle": "apple",
+    "avatarIcon": "../Tuiterimages/applelogo.png"
   }
 ]
 
