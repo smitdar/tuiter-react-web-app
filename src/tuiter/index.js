@@ -15,12 +15,11 @@ function Tuiter() {
       </div>
       <div className="col-10 col-md-10 col-lg-7 col-xl-6"
            style={{"position": "relative"}}>
+        <Routes>
+                 <Route path="explore" element={<ExploreComponent/>}/>
+                 <Route path="home" element={<HomeComponent/>}/>
 
-       <Routes>
-                <Route path="explore" element={<ExploreComponent/>}/>
-                <Route path="home"  element={<HomeComponent/>}/>
-
-       </Routes>
+               </Routes>
       </div>
       <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
         <WhoToFollowListItem/>

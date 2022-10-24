@@ -3,11 +3,10 @@ import homeArray from './home.json';
 import HomeComponent
   from "./HomeComponent";
 
-const WhoToFollowList = () => {
+const Homepage = () => {
     return (
         <>
             <ul className="list-group ">
-                <a href="/#" className="list-group-item wd-list-group "><strong>Who to follow</strong></a>
                 {homeArray.map(home => {
                     return (
 
@@ -21,4 +20,4 @@ const WhoToFollowList = () => {
         </>
     );
 };
-export default WhoToFollowList;
+export default Homepage;

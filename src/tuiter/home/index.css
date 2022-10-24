@@ -145,10 +145,6 @@ table{
 
 }
 
-body{
-
-
-}
 
 .button{
 background-color:white;
@@ -252,7 +248,7 @@ body{
 
 .wd-profilename{
     font-size:15px;
-    color : white;
+    color : black;
     display:inline;
     margin-top:12px;
     margin-bottom:12px;
@@ -272,7 +268,7 @@ body{
 
 .wd-text-content{
     font-size:15px;
-    color : white;
+    color : black;
     max-width: 506px;
     display:inline;
     margin-top: 12px;
@@ -326,7 +322,7 @@ body{
 
 .wd-belowtext-title{
         font-size:15px;
-        color : white;
+        color : black;
         display:inline;
         margin-top:12px;
         margin-bottom:12px;
