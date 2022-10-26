@@ -27,7 +27,7 @@
 .wd-nav-tabs{
     width: 100%;
     color: rgb(29,161,242);
-    padding: 0px
+    padding: 0px;
 }
 
 .wd-nav-tabs li{
@@ -175,11 +175,6 @@ background-color:white;
     padding-left: 15px;
 }
 
-@media (min-width: 992px) {
-  .bd-highlight-icon {
-    overflow: visible;
-  }
-}
 
 .wd-top-image{
 height: 100%;
@@ -209,8 +204,6 @@ body{
     border-left: 1px solid  rgb(47, 51, 54);
     padding-right: 0px;
     border-right: 1px solid  rgb(47, 51, 54);
-    width:50%;
-
 
 }
 
@@ -330,7 +323,7 @@ body{
 }
 
 .wd-flex-div{
-    display:flex
+    display:flex;
 }
 
 .wd-paddingtop{
@@ -339,5 +332,5 @@ body{
 }
 
 .wd-floattop{
-    float:left
+    float:left;
 }
