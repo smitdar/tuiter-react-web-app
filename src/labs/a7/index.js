@@ -1,12 +1,23 @@
 import React from "react";
-import ReduxExamples from "/Users/smitdar/2022/fall/webdev/tuiter-react-web-app/src/labs/a7/index.js";
+
+import ReduxExamples from "./redux-examples";
+
+
 
 const Assignment7 = () => {
-    return(
+
+    return (
+
         <>
+
             <h1>Assignment 7</h1>
-            <ReduxExamples/>
+
+            <ReduxExamples />
+
         </>
+
     );
+
 };
+
 export default Assignment7;
