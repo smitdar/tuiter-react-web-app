@@ -6,7 +6,9 @@ const HomeComponent = (
 ) => {
  return(
 
-<div>
+
+
+<div className="wd-line">
 
     <div className="wd-flex-div">
 
@@ -25,24 +27,12 @@ const HomeComponent = (
             </p>
         </div>
     </div>
-
-    <div className="wd-content-border">
-
-        <img className="wd-content-img" src={home.descriptionImage}></img>
-
-        <br/>
-        <h1 className="wd-belowtext-title">
-            {home.topic}
-        </h1>
-        <h2 className="wd-belowtext">
-            {home.description}
-            </h2>
-    </div>
+<br/>
 
     <div>
-        <a className="wd-bottom-div" href="#">&#128495; 50</a>
-        <a className="wd-bottom-div" href="#">&#8634; 10</a>
-        <a className="wd-heart" href="#">&#9829; 22</a>
+        <a className="wd-bottom-div" href="#">&#128495; {home.commentsCount}</a>
+        <a className="wd-bottom-div" href="#">&#8634; {home.retweetsCount}</a>
+        <a className="wd-heart" href="#">&#9829; {home.likesCount}</a>
         <a className="wd-bottom-div" href="#">&#8613;</a>
 
     </div>

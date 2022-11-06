@@ -6,13 +6,15 @@ import ExploreComponent
   from "./explore/index.js";
 import {Routes, Route} from "react-router";
 import HomeComponent from "./home";
+import ProfileComponent from "./profile";
 import whoReducer
   from "./reducers/who-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
 import { configureStore }
   from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 const store = configureStore(
-  {reducer: {who: whoReducer}});
+  {reducer: {who: whoReducer, tuits: tuitsReducer}});
 
 function Tuiter() {
  return (
@@ -26,6 +28,7 @@ function Tuiter() {
         <Routes>
                  <Route path="explore" element={<ExploreComponent/>}/>
                  <Route path="home" element={<HomeComponent/>}/>
+                 <Route path="profile" element={<ProfileComponent/>}/>
 
                </Routes>
       </div>

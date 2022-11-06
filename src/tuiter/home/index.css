@@ -208,9 +208,13 @@ body{
 }
 
 .wd-line{
-    border-bottom: 1px solid  rgb(47, 51, 54);
+    border-bottom: 1px solid  #D3D3D3;
     margin-left: 16px;
     margin-top: 12px;
+    border-right: 1px solid #D3D3D3;
+    border-left: 1px solid  #D3D3D3;
+     border-top: 1px solid  #D3D3D3;
+     padding-top: 12px;
 }
 
 .wd-page-name{
@@ -329,6 +333,7 @@ body{
 .wd-paddingtop{
     float:left ;
     padding-right:12px;
+    padding-left:10px;
 }
 
 .wd-floattop{

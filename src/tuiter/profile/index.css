@@ -1,0 +1,20 @@
+.wd-bannerPicture{
+height:200px;
+width :100%;
+}
+
+.wd-profilePicture{
+border-radius: 50%;
+height: 80px;
+width: 80px;
+}
+
+.wd-edit{
+float: right;
+padding-top: 10px;
+}
+
+.wd-details{
+display: inline;
+}
+

@@ -33,10 +33,10 @@ const {pathname} = useLocation();
                              ${active === 'lists'?'active':''}`}>
                 Lists
               </a>
-              <a className={`list-group-item
-                             ${active === 'profile'?'active':''}`}>
-                Profile
-              </a>
+              <Link to="/tuiter/profile" className={`list-group-item
+                                           ${active === 'profile'?'active':''}`}>
+                              Profile
+                            </Link>
               <a className={`list-group-item
                              ${active === 'more'?'active':''}`}>
                 More
