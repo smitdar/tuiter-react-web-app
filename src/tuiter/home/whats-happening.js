@@ -10,12 +10,13 @@ const WhatsHappening = () => {
       tuit: whatsHappening
     }
     dispatch(createTuit(newTuit));
+    setWhatsHappening("")
  }
  return (
    <div className="row">
      <div className="col-auto">
 
-       <img src="../Tuiterimages/oraclelogo.png" className="wd-profile-image"/>
+       <img alt="text" src="../Tuiterimages/oraclelogo.png" className="wd-profile-image"/>
 
      </div>
      <div className="col-10">

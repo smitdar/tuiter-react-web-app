@@ -1,5 +1,5 @@
 import React from "react";
-import homeArray from './home.json';
+import homeArray from '../data/home.json';
 import HomeComponent
   from "./HomeComponent";
 import WhatsHappening from "./whats-happening";
