@@ -12,9 +12,9 @@ const templateTuit = {
  "topic": "Space",
  "time": "2h",
  "liked": true,
- "replies": 0,
- "retuits": 0,
- "likes": 0,
+ "replies": "100",
+ "retuits": "5.5k",
+ "likes": "10k",
 }
 
 const tuitsSlice = createSlice({

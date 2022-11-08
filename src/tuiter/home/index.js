@@ -3,8 +3,11 @@ import homeArray from '../data/home.json';
 import HomeComponent
   from "./HomeComponent";
 import WhatsHappening from "./whats-happening";
+import {useSelector} from "react-redux"
 
 const Homepage = () => {
+ const postsArray = useSelector(state => state.tuits)
+
     return (
         <>
         <div>
@@ -15,7 +18,7 @@ const Homepage = () => {
                 <WhatsHappening/>
                 </div>
             <ul className="list-group ">
-                {homeArray.map(home => {
+                {postsArray.map(home => {
                     return (
 
                         <div key={home.id}>
@@ -25,6 +28,7 @@ const Homepage = () => {
                 })
                 }
             </ul>
+             
         </>
     );
 };
