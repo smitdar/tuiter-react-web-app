@@ -1,7 +1,7 @@
 import React from "react";
 import homeArray from '../data/home.json';
-import HomeComponent
-  from "./HomeComponent";
+import TuitsList
+  from "../tuits/tuit-list";
 import WhatsHappening from "./whats-happening";
 import {useSelector} from "react-redux"
 
@@ -9,27 +9,11 @@ const Homepage = () => {
  const postsArray = useSelector(state => state.tuits)
 
     return (
-        <>
-        <div>
-        <h1>Home</h1>
-        </div>
-
-        <div>
-                <WhatsHappening/>
-                </div>
-            <ul className="list-group ">
-                {postsArray.map(home => {
-                    return (
-
-                        <div key={home.id}>
-                            <HomeComponent home={home} />
-                        </div>
-                    );
-                })
-                }
-            </ul>
-             
-        </>
+       <>
+                   <h3 className="ms-3">Home</h3>
+                   <WhatsHappening/>
+                   <TuitsList/>
+               </>
     );
 };
 export default Homepage;
