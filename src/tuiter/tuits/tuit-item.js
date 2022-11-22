@@ -4,8 +4,8 @@ import TuitStats from "./tuit-stats"
 const TuitItem = (        {tuit = {
                               _id: 123,
                               userName: 'Elon Musk',
-                              handle: "elonmusk",
-                              time: "23h",
+                              handle: "  elonmusk",
+                              time: " 23h",
                               title: "Amazing show about @Inspiration4x mission!",
                               userImage: "../Tuiterimages/Starship.webp",
                               image: "../Tuiterimages/Starship.webp",

@@ -17,7 +17,7 @@ const WhatsHappening = () => {
    <div className="row">
      <div className="col-auto">
 
-       <img alt="text" src="../Tuiterimages/oraclelogo.png" className="wd-profile-image"/>
+       <img alt="text" src="../Tuiterimages/Starship.webp" className="wd-profile-image"/>
 
      </div>
      <div className="col-10">

@@ -11,34 +11,33 @@ const TuitStats = ({
     }
 }) =>{
 const dispatch = useDispatch();
-const toggleLike = (tuit) => {
+//const toggleLike = (tuit) => {
 //dispatch(LikeTuitToggle(tuit))
-}
+//}
 return(
 <div className = "row mt-3 wd-post-button-row">
     <div className= "col me-1">
         <a className="text-decoration-none text-secondary" href="#">
-            <i className="fa-regular fa-comment me-2"></i>
+            &#128495;
             <span>{tuit.replies}</span>
         </a>
     </div>
     <div className= "col me-1">
            <a className="text-decoration-none text-secondary" href="#">
-               <i className="fa-solid fa-retweet me-2"></i>
+               &#8634;
                <span>{tuit.retuits}</span>
            </a>
     </div>
     <div className= "col me-1">
                <a className="text-decoration-none text-secondary" href="#">
-                   <i className="fa-solid fa-heart me-2"></i>
+                   &#9829;
                    <span>{tuit.likes}</span>
                </a>
     </div>
 
     <div className= "col me-1">
                     <a className="text-decoration-none text-secondary" href="#">
-                        <i className="fa-solid fa-share-nodes"></i>
-                        <span>{tuit.likes}</span>
+                    &#8613;
                     </a>
     </div>
 
@@ -46,3 +45,4 @@ return(
   );
  }
 export default TuitStats;
+
