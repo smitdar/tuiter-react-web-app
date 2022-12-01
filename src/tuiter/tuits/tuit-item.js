@@ -1,7 +1,8 @@
 import {useDispatch} from "react-redux";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
 import TuitStats from "./tuit-stats"
-const TuitItem = (        {tuit = {
+const TuitItem = (
+                            {tuit = {
                               _id: 123,
                               userName: 'Elon Musk',
                               handle: "  elonmusk",
@@ -10,12 +11,13 @@ const TuitItem = (        {tuit = {
                               userImage: "../Tuiterimages/Starship.webp",
                               image: "../Tuiterimages/Starship.webp",
                               image_title: "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
-                              image_description: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space",
+                              tuit: "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space",
                               image_link: "netflix.com",
                               liked: "true",
                               replies: "4.2K",
                               retuits: "3.5K",
-                              likes: "37.5K"}}) => {
+                              likes: "37.5K"}}
+                              ) => {
  const dispatch = useDispatch();
  const deleteTuitHandler = (id) => {
    dispatch(deleteTuitThunk(id));
@@ -34,8 +36,8 @@ const TuitItem = (        {tuit = {
                  <span className = "fw-bolder">{tuit.userName}</span>
                  <span className = "text-secondary pe-1">{tuit.handle}</span>
                  <span className = "text-secondary">{tuit.time}</span>
-                 <div>{tuit.image_description}</div>
-                 <TuitStats key = {tuit.id} tuit={tuit}/>
+                 <div>{tuit.tuit}</div>
+                 <TuitStats key = {tuit._id} tuit={tuit}/>
                  </div>
                </div>
               </div>

@@ -9,7 +9,7 @@ const TuitsList = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
-    }, [dispatch])
+    }, [])
 
     return(
         <ul className="list-group wd-post-summary-list rounded">
@@ -20,8 +20,8 @@ const TuitsList = () => {
                 </li>
             }
             {
-                tuits.map(post =>
-                    <TuitItem key={post._id} post={post}/>
+                tuits.map(tuit =>
+                    <TuitItem key={tuit._id} tuit={tuit}/>
                 )
             }
         </ul>
